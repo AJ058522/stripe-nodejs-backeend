@@ -20,7 +20,7 @@ router.post('/login', userController.login); // post login user
 router.put('/user/:id',[auth.verificaToken, verificaRole_Admin], userController.updateUser); // get list users
 
 
-
+//
 router.get('/user' , userController.getUsers); // get list users
 router.get('/user/:id' , userController.getUser); // get list users
 
