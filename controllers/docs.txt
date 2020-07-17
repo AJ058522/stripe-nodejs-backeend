@@ -1,0 +1,1203 @@
+rperez@dci-pr.com
+admin
+  let titular = await Ticket.findById(req.params).populate('titular', ' owner_1 email_1 unidad owners_is state pueblo')
+
+user: developer-dci-pr
+pass: Geov2020!
+
+Soy un password de titular 252545428
+ password: 0213151 ID: admin025846
+
+025875
+loscorales123
+
+db: dc_cond_dc
+mongodb+srv://developer-dci-pr:<password>@cluster0-k8zpx.mongodb.net/test?retryWrites=true&w=majority
+
+soy un body password 4149
+soy un id cc
+
+"_id" : ObjectId("5eaacdaf533e436842b874c2"),
+    "role" : "TITULAR_ROLE",
+    "owners_id" : "loscorales202",
+    "owners_password" : "$2b$10$SwOeOiGbDeOHp2dljzrqJulMZoSwA9YDNr0HO82r6AbDf7yvVWgyi",
+    "urbanizacion_condominio" : "Los Corales",
+    "unidad" : "202",
+    "companiaAdmin" : "DCI",
+
+soy un body password 100000000195
+soy un id adminadmin
+
+
+fecha_comienzo_1 fecha_comienzo_2 fecha_comienzo_3  telefono_inquilino_2 telefono_inquilino_3 email_inquilino_1 email_inquilino_2 email_inquilino_3 fecha_conclusion_1 fecha_conclusion_2 fecha_conclusion_3
+soy un body password 1000000790
+soy un id 88099033geovane
+
+
+user: lajolla5b6
+pass 1000040
+
+/* 1 */
+{
+    "_id" : ObjectId("5ea9ae311fb81542b01a6865"),
+    "role" : "TITULAR_ROLE",
+    "owners_id" : "lajollab5",
+    "owners_password" : "$2b$10$TZErrSjLcF8bCMBqSi26H.ZJiHw/jZbfLqLIDSSYWeWiFIxdbQBru",
+    "urbanizacion_condominio" : "La Jolla",
+    "unidad" : "B5",
+    "property_id" : 1000001,
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5ea9b62646af6b2e385bf9d6"),
+    "role" : "TITULAR_ROLE",
+    "owners_id" : "lajolla2b5",
+    "owners_password" : "$2b$10$rVUGb0I5Z6sUpu5J5BqVCuCbgWXSC8CqJKDTCcSFxexpqXHPIpZnW",
+    "urbanizacion_condominio" : "La Jolla 2",
+    "unidad" : "B5",
+    "companiaAdmin" : "DCI",
+    "property_id" : 1000002,
+    "direccion_fisica_1" : "295 Palmas Inn Way",
+    "direccion_fisica_2" : "Suite 125",
+    "pueblo" : "",
+    "pueblo_2" : "",
+
+    "estado" : "",
+    "estado_2" : "",
+
+    "zip_code" : "",
+    "zip_code_2" : "",
+    "direccion_postal_1" : "",
+    "direccion_postal_2" : "",
+    "pueblo_postal" : "",
+    "pueblo_postal_2" : "",
+
+    "estado_postal" : "",
+    "estado_postal_2" : "",
+
+    "zip_code_postal" : "",
+    "zip_code_postal_2" : "",
+
+    "owner_1" : "",
+    "owner_2" : "",
+    "owner_3" : "",
+    "owner_4" : "",
+    "contacto_1" : "",
+    "contacto_2" : "",
+    "contacto_3" : "",
+    "contacto_4" : "",
+    "contacto_5" : "",
+    "telefono_1" : "",
+    "telefono_2" : "",
+    "telefono_3" : "",
+    "telefono_4" : "",
+    "telefono_5" : "",
+    "email_1" : "",
+    "email_2" : "",
+    "email_3" : "",
+    "email_4" : "",
+    "email_5" : "",
+    "marca_modelo_vehiculo_1" : "",
+    "marca_modelo_vehiculo_2" : "",
+    "marca_modelo_vehiculo_3" : "",
+    "marca_modelo_vehiculo_4" : "",
+    "marca_modelo_vehiculo_5" : "",
+    "marca_modelo_vehiculo_6" : "",
+    "marca_modelo_vehiculo_7" : "",
+    "tablilla_1" : "",
+    "tablilla_2" : "",
+    "tablilla_3" : "",
+    "tablilla_4" : "",
+    "tablilla_5" : "",
+    "tablilla_6" : "",
+    "tablilla_7" : "",
+    "avi_1" : "",
+    "avi_2" : "",
+    "avi_3" : "",
+    "avi_4" : "",
+    "avi_5" : "",
+    "avi_6" : "",
+    "avi_7" : "",
+    "unidad_rentada" : true,
+    "nombre_inquilinos_1" : "",
+    "nombre_inquilinos_2" : "",
+    "nombre_inquilinos_3" : "",
+    "fecha_comienzo" : null,
+    "telefono_inquilino_1" : "",
+    "telefono_inquilino_2" : "",
+    "email_inquilino_1" : "",
+    "email_inquilino_2" : "",
+    "fecha_adquirida" : null,
+    "banco_hipotecario" : "",
+    "numero_routing" : null,
+    "numero_cuenta" : null,
+    "cuota_mensual" : "",
+    "derrama_1" : "",
+    "derrama_2" : "",
+    "copia_escritura" : "",
+    "id_quickbooks_peachtree" : "",
+    "envio_statements" : "",
+    "nombre_persona_emergencia" : "",
+    "telefono_persona_emergencia" : "",
+    "relacion_persona_emergencia" : "",
+    "persona_autorizada_entrar_1" : "",
+    "relacion_autorizada_entrar_1" : "",
+    "restrincciones_autorizada_1" : "",
+    "persona_autorizada_entrar_2" : "",
+    "restrincciones_autorizada_2" : "",
+    "persona_autorizada_entrar_3" : "",
+    "relacion_autorizada_entrar_3" : "",
+    "restrincciones_autorizada_3" : "",
+    "persona_autorizada_entrar_4" : "",
+    "relacion_autorizada_entrar_4" : "",
+    "restrincciones_autorizada_4" : "",
+    "persona_autorizada_entrar_5" : "",
+    "relacion_autorizada_entrar_5" : "",
+    "restrincciones_autorizada_5" : "",
+    "persona_autorizada_entrar_6" : "",
+    "relacion_autorizada_entrar_6" : "",
+    "restrincciones_autorizada_6" : "",
+    "persona_autorizada_entrar_7" : "",
+    "relacion_autorizada_entrar_7" : "",
+    "restrincciones_autorizada_7" : "",
+    "persona_autorizada_entrar_8" : "",
+    "relacion_autorizada_entrar_8" : "",
+    "restrincciones_autorizada_8" : "",
+    "persona_autorizada_entrar_9" : "",
+    "relacion_autorizada_entrar_9" : "",
+    "restrincciones_autorizada_9" : "",
+    "persona_autorizada_entrar_10" : "",
+    "relacion_autorizada_entrar_10" : "",
+    "restrincciones_autorizada_10" : "",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5ea9c07506a7ca0bb8d157b7"),
+    "role" : "TITULAR_ROLE",
+    "owners_id" : "lajolla3b5",
+    "owners_password" : "$2b$10$Jt0fcHyLgKMT0x9wBYRG5.hhqdocdCyiGlz7dl3MOX.p/Jbru/NsC",
+    "urbanizacion_condominio" : "La Jolla 3",
+    "unidad" : "B5",
+    "companiaAdmin" : "DCI",
+    "property_id" : 1000003,
+    "direccion_fisica_1" : "295 Palmas Inn Way",
+    "direccion_fisica_2" : "Suite 125",
+    "pueblo" : "Humacao",
+    "estado" : "PR",
+    "zip_code" : "00791",
+    "direccion_postal_1" : "295 Palmas Inn Way",
+    "direccion_postal_2" : "Suite 125",
+    "pueblo_postal" : "Humacao",
+    "estado_postal" : "PR",
+    "zip_code_postal" : "00791",
+    "owner_1" : "Fulano de tal 1",
+    "owner_2" : "Fulano de tal 2",
+    "owner_3" : "Fulano de tal 3",
+    "owner_4" : "Fulano de tal 4",
+    "contacto_1" : "Owner 1 Cel",
+    "contacto_2" : "Owner 2 Cel",
+    "contacto_3" : "Owner 3 Cel",
+    "contacto_4" : "Owner 4 Cel",
+    "contacto_5" : "Owner 5 Cel",
+    "telefono_1" : "787-000-0000",
+    "telefono_2" : "787-000-0000",
+    "telefono_3" : "787-000-0000",
+    "telefono_4" : "787-000-0000",
+    "telefono_5" : "787-000-0000",
+    "email_1" : "blah@gmail.com",
+    "email_2" : "blah@gmail.com",
+    "email_3" : "blah@gmail.com",
+    "email_4" : "blah@gmail.com",
+    "email_5" : "blah@gmail.com",
+    "marca_modelo_vehiculo_1" : "Honda ACCORD",
+    "marca_modelo_vehiculo_2" : "Honda ACCORD 2",
+    "marca_modelo_vehiculo_3" : "Honda ACCORD 3",
+    "marca_modelo_vehiculo_4" : "Honda ACCORD 4",
+    "marca_modelo_vehiculo_5" : "Honda ACCORD 5",
+    "marca_modelo_vehiculo_6" : "Honda ACCORD 6",
+    "marca_modelo_vehiculo_7" : "Honda ACCORD 7",
+    "tablilla_1" : "jan001",
+    "tablilla_2" : "jan002",
+    "tablilla_3" : "jan003",
+    "tablilla_4" : "jan004",
+    "tablilla_5" : "jan005",
+    "tablilla_6" : "jan006",
+    "tablilla_7" : "jan007",
+    "avi_1" : "",
+    "avi_2" : "",
+    "avi_3" : "",
+    "avi_4" : "",
+    "avi_5" : "",
+    "avi_6" : "",
+    "avi_7" : "",
+    "unidad_rentada" : true,
+    "nombre_inquilinos_1" : "",
+    "nombre_inquilinos_2" : "",
+    "nombre_inquilinos_3" : "",
+    "fecha_comienzo" : null,
+    "fecha_conclusion" : null,
+    "telefono_inquilino_1" : "",
+    "telefono_inquilino_2" : "",
+    "email_inquilino_1" : "",
+    "email_inquilino_2" : "",
+    "fecha_adquirida" : null,
+    "banco_hipotecario" : "",
+    "numero_routing" : null,
+    "numero_cuenta" : null,
+    "cuota_mensual" : "",
+    "derrama_1" : "",
+    "derrama_2" : "",
+    "copia_escritura" : "",
+    "id_quickbooks_peachtree" : "",
+    "envio_statements" : "",
+    "nombre_persona_emergencia" : "",
+    "telefono_persona_emergencia" : "",
+    "relacion_persona_emergencia" : "",
+    "persona_autorizada_entrar_1" : "",
+    "relacion_autorizada_entrar_1" : "",
+    "restrincciones_autorizada_1" : "",
+    "persona_autorizada_entrar_2" : "",
+    "restrincciones_autorizada_2" : "",
+    "persona_autorizada_entrar_3" : "",
+    "relacion_autorizada_entrar_3" : "",
+    "restrincciones_autorizada_3" : "",
+    "persona_autorizada_entrar_4" : "",
+    "relacion_autorizada_entrar_4" : "",
+    "restrincciones_autorizada_4" : "",
+    "persona_autorizada_entrar_5" : "",
+    "relacion_autorizada_entrar_5" : "",
+    "restrincciones_autorizada_5" : "",
+    "persona_autorizada_entrar_6" : "",
+    "relacion_autorizada_entrar_6" : "",
+    "restrincciones_autorizada_6" : "",
+    "persona_autorizada_entrar_7" : "",
+    "relacion_autorizada_entrar_7" : "",
+    "restrincciones_autorizada_7" : "",
+    "persona_autorizada_entrar_8" : "",
+    "relacion_autorizada_entrar_8" : "",
+    "restrincciones_autorizada_8" : "",
+    "persona_autorizada_entrar_9" : "",
+    "relacion_autorizada_entrar_9" : "",
+    "restrincciones_autorizada_9" : "",
+    "persona_autorizada_entrar_10" : "",
+    "relacion_autorizada_entrar_10" : "",
+    "restrincciones_autorizada_10" : "",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5ea9c31304f8a74d6cd6ddfd"),
+    "role" : "TITULAR_ROLE",
+    "owners_id" : "lajolla4b5",
+    "owners_password" : "$2b$10$ARP62i4Lj29xki90aeLFfuB39DXojVIVJDyz.J3oM/Hm4gOQBFE92",
+    "urbanizacion_condominio" : "La Jolla 4",
+    "unidad" : "B5",
+    "companiaAdmin" : "DCI",
+    "property_id" : 1000005,
+    "direccion_fisica_1" : "295 Palmas Inn Way",
+    "direccion_fisica_2" : "Suite 125",
+    "pueblo" : "Humacao",
+    "estado" : "PR",
+    "zip_code" : "00791",
+    "direccion_postal_1" : "295 Palmas Inn Way",
+    "direccion_postal_2" : "Suite 125",
+    "pueblo_postal" : "Humacao",
+    "estado_postal" : "PR",
+    "zip_code_postal" : "00791",
+    "owner_1" : "Fulano de tal 1",
+    "owner_2" : "Fulano de tal 2",
+    "owner_3" : "Fulano de tal 3",
+    "owner_4" : "Fulano de tal 4",
+    "contacto_1" : "Owner 1 Cel",
+    "contacto_2" : "Owner 2 Cel",
+    "contacto_3" : "Owner 3 Cel",
+    "contacto_4" : "Owner 4 Cel",
+    "contacto_5" : "Owner 5 Cel",
+    "telefono_1" : "787-000-0000",
+    "telefono_2" : "787-000-0000",
+    "telefono_3" : "787-000-0000",
+    "telefono_4" : "787-000-0000",
+    "telefono_5" : "787-000-0000",
+    "email_1" : "blah@gmail.com",
+    "email_2" : "blah@gmail.com",
+    "email_3" : "blah@gmail.com",
+    "email_4" : "blah@gmail.com",
+    "email_5" : "blah@gmail.com",
+    "marca_modelo_vehiculo_1" : "Honda ACCORD",
+    "marca_modelo_vehiculo_2" : "Honda ACCORD 2",
+    "marca_modelo_vehiculo_3" : "Honda ACCORD 3",
+    "marca_modelo_vehiculo_4" : "Honda ACCORD 4",
+    "marca_modelo_vehiculo_5" : "Honda ACCORD 5",
+    "marca_modelo_vehiculo_6" : "Honda ACCORD 6",
+    "marca_modelo_vehiculo_7" : "Honda ACCORD 7",
+    "tablilla_1" : "jan001",
+    "tablilla_2" : "jan002",
+    "tablilla_3" : "jan003",
+    "tablilla_4" : "jan004",
+    "tablilla_5" : "jan005",
+    "tablilla_6" : "jan006",
+    "tablilla_7" : "jan007",
+    "avi_1" : "",
+    "avi_2" : "",
+    "avi_3" : "",
+    "avi_4" : "",
+    "avi_5" : "",
+    "avi_6" : "",
+    "avi_7" : "",
+    "unidad_rentada" : true,
+    "nombre_inquilinos_1" : "",
+    "nombre_inquilinos_2" : "",
+    "nombre_inquilinos_3" : "",
+    "fecha_comienzo" : null,
+    "fecha_conclusion" : null,
+    "telefono_inquilino_1" : "",
+    "telefono_inquilino_2" : "",
+    "email_inquilino_1" : "",
+    "email_inquilino_2" : "",
+    "fecha_adquirida" : null,
+    "banco_hipotecario" : "",
+    "numero_routing" : null,
+    "numero_cuenta" : null,
+    "cuota_mensual" : "",
+    "derrama_1" : "",
+    "derrama_2" : "",
+    "copia_escritura" : "",
+    "id_quickbooks_peachtree" : "",
+    "envio_statements" : "",
+    "nombre_persona_emergencia" : "",
+    "telefono_persona_emergencia" : "",
+    "relacion_persona_emergencia" : "",
+    "persona_autorizada_entrar_1" : "",
+    "relacion_autorizada_entrar_1" : "",
+    "restrincciones_autorizada_1" : "",
+    "persona_autorizada_entrar_2" : "",
+    "restrincciones_autorizada_2" : "",
+    "persona_autorizada_entrar_3" : "",
+    "relacion_autorizada_entrar_3" : "",
+    "restrincciones_autorizada_3" : "",
+    "persona_autorizada_entrar_4" : "",
+    "relacion_autorizada_entrar_4" : "",
+    "restrincciones_autorizada_4" : "",
+    "persona_autorizada_entrar_5" : "",
+    "relacion_autorizada_entrar_5" : "",
+    "restrincciones_autorizada_5" : "",
+    "persona_autorizada_entrar_6" : "",
+    "relacion_autorizada_entrar_6" : "",
+    "restrincciones_autorizada_6" : "",
+    "persona_autorizada_entrar_7" : "",
+    "relacion_autorizada_entrar_7" : "",
+    "restrincciones_autorizada_7" : "",
+    "persona_autorizada_entrar_8" : "",
+    "relacion_autorizada_entrar_8" : "",
+    "restrincciones_autorizada_8" : "",
+    "persona_autorizada_entrar_9" : "",
+    "relacion_autorizada_entrar_9" : "",
+    "restrincciones_autorizada_9" : "",
+    "persona_autorizada_entrar_10" : "",
+    "relacion_autorizada_entrar_10" : "",
+    "restrincciones_autorizada_10" : "",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5ea9c4e004f8a74d6cd6de00"),
+    "role" : "TITULAR_ROLE",
+    "owners_id" : "lajolla5b6",
+    "owners_password" : "$2b$10$srPCFMeS1Erjvj1ZHj86EOfM9/.jJ7MIpA9r6zyhX/k9kw2km8xAW",
+    "urbanizacion_condominio" : "La Jolla 5",
+    "unidad" : "B6",
+    "companiaAdmin" : "DCI",
+    "property_id" : 1000006,
+    "direccion_fisica_1" : "295 Palmas Inn Way",
+    "direccion_fisica_2" : "Suite 125",
+    "pueblo" : "Humacao",
+    "estado" : "PR",
+    "zip_code" : "00791",
+    "direccion_postal_1" : "295 Palmas Inn Way",
+    "direccion_postal_2" : "Suite 125",
+    "pueblo_postal" : "Humacao",
+    "estado_postal" : "PR",
+    "zip_code_postal" : "00791",
+    "owner_1" : "Fulano de tal 1",
+    "owner_2" : "Fulano de tal 2",
+    "owner_3" : "Fulano de tal 3",
+    "owner_4" : "Fulano de tal 4",
+    "contacto_1" : "Owner 1 Cel",
+    "contacto_2" : "Owner 2 Cel",
+    "contacto_3" : "Owner 3 Cel",
+    "contacto_4" : "Owner 4 Cel",
+    "contacto_5" : "Owner 5 Cel",
+    "telefono_1" : "787-000-0000",
+    "telefono_2" : "787-000-0000",
+    "telefono_3" : "787-000-0000",
+    "telefono_4" : "787-000-0000",
+    "telefono_5" : "787-000-0000",
+    "email_1" : "blah@gmail.com",
+    "email_2" : "blah@gmail.com",
+    "email_3" : "blah@gmail.com",
+    "email_4" : "blah@gmail.com",
+    "email_5" : "blah@gmail.com",
+    "marca_modelo_vehiculo_1" : "Honda ACCORD",
+    "marca_modelo_vehiculo_2" : "Honda ACCORD 2",
+    "marca_modelo_vehiculo_3" : "Honda ACCORD 3",
+    "marca_modelo_vehiculo_4" : "Honda ACCORD 4",
+    "marca_modelo_vehiculo_5" : "Honda ACCORD 5",
+    "marca_modelo_vehiculo_6" : "Honda ACCORD 6",
+    "marca_modelo_vehiculo_7" : "Honda ACCORD 7",
+    "tablilla_1" : "jan001",
+    "tablilla_2" : "jan002",
+    "tablilla_3" : "jan003",
+    "tablilla_4" : "jan004",
+    "tablilla_5" : "jan005",
+    "tablilla_6" : "jan006",
+    "tablilla_7" : "jan007",
+    "avi_1" : "avi_1",
+    "avi_2" : "avi_2",
+    "avi_3" : "avi_3",
+    "avi_4" : "avi_4",
+    "avi_5" : "avi_5",
+    "avi_6" : "avi_6",
+    "avi_7" : "avi_7",
+    "unidad_rentada" : true,
+    "nombre_inquilinos_1" : "nombre_inquilinos_1",
+    "nombre_inquilinos_2" : "nombre_inquilinos_2",
+    "nombre_inquilinos_3" : "nombre_inquilinos_3",
+    "fecha_comienzo" : ISODate("2020-05-04T07:00:00.000Z"),
+    "fecha_conclusion" : ISODate("2021-05-04T07:00:00.000Z"),
+    "telefono_inquilino_1" : "000000000",
+    "telefono_inquilino_2" : "7876574891",
+    "email_inquilino_1" : "geovaneartedesign@gmail.com",
+    "email_inquilino_2" : "geovaneartedesign2@gmail.com",
+    "fecha_adquirida" : ISODate("2020-05-04T07:00:00.000Z"),
+    "banco_hipotecario" : "mayo 4 2021",
+    "numero_routing" : 25555644564.0,
+    "numero_cuenta" : 12121545,
+    "cuota_mensual" : "25",
+    "derrama_1" : "2",
+    "derrama_2" : "1",
+    "copia_escritura" : "archive",
+    "id_quickbooks_peachtree" : "21212",
+    "envio_statements" : "no se que es eso123",
+    "nombre_persona_emergencia" : "geovane",
+    "telefono_persona_emergencia" : "7876574891",
+    "relacion_persona_emergencia" : "amigo",
+    "persona_autorizada_entrar_1" : "da silva",
+    "relacion_autorizada_entrar_1" : "amigo",
+    "restrincciones_autorizada_1" : "prueba",
+    "persona_autorizada_entrar_2" : "prueba",
+    "restrincciones_autorizada_2" : "prueba",
+    "persona_autorizada_entrar_3" : "prueba",
+    "relacion_autorizada_entrar_3" : "prueba",
+    "restrincciones_autorizada_3" : "prueba",
+    "persona_autorizada_entrar_4" : "prueba",
+    "relacion_autorizada_entrar_4" : "prueba",
+    "restrincciones_autorizada_4" : "prueba",
+    "persona_autorizada_entrar_5" : "prueba",
+    "relacion_autorizada_entrar_5" : "prueba",
+    "restrincciones_autorizada_5" : "prueba",
+    "persona_autorizada_entrar_6" : "prueba",
+    "relacion_autorizada_entrar_6" : "prueba",
+    "restrincciones_autorizada_6" : "prueba",
+    "persona_autorizada_entrar_7" : "prueba",
+    "relacion_autorizada_entrar_7" : "prueba",
+    "restrincciones_autorizada_7" : "prueba",
+    "persona_autorizada_entrar_8" : "prueba",
+    "relacion_autorizada_entrar_8" : "prueba",
+    "restrincciones_autorizada_8" : "prueba",
+    "persona_autorizada_entrar_9" : "prueba",
+    "relacion_autorizada_entrar_9" : "prueba",
+    "restrincciones_autorizada_9" : "prueba",
+    "persona_autorizada_entrar_10" : "prueba",
+    "relacion_autorizada_entrar_10" : "prueba",
+    "restrincciones_autorizada_10" : "prueba",
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5ea9df3a598c572d14acb03d"),
+    "role" : "TITULAR_ROLE",
+    "owners_id" : "lajolla5b7",
+    "owners_password" : "$2b$10$flhKLeTXJf8k3lkDpYeA4um9kGLTfnJL7OW4ZOjwPaclzNttz8Z3e",
+    "urbanizacion_condominio" : "La Jolla 5",
+    "unidad" : "B7",
+    "companiaAdmin" : "DCI",
+    "property_id" : 1000007,
+    "direccion_fisica_1" : "295 Palmas Inn Way",
+    "direccion_fisica_2" : "Suite 125",
+    "pueblo" : "Humacao",
+    "estado" : "PR",
+    "zip_code" : "00791",
+    "direccion_postal_1" : "295 Palmas Inn Way",
+    "direccion_postal_2" : "Suite 125",
+    "pueblo_postal" : "Humacao",
+    "estado_postal" : "PR",
+    "zip_code_postal" : "00791",
+    "owner_1" : "Fulano de tal 1",
+    "owner_2" : "Fulano de tal 2",
+    "owner_3" : "Fulano de tal 3",
+    "owner_4" : "Fulano de tal 4",
+    "contacto_1" : "Owner 1 Cel",
+    "contacto_2" : "Owner 2 Cel",
+    "contacto_3" : "Owner 3 Cel",
+    "contacto_4" : "Owner 4 Cel",
+    "contacto_5" : "Owner 5 Cel",
+    "telefono_1" : "787-000-0000",
+    "telefono_2" : "787-000-0000",
+    "telefono_3" : "787-000-0000",
+    "telefono_4" : "787-000-0000",
+    "telefono_5" : "787-000-0000",
+    "email_1" : "blah@gmail.com",
+    "email_2" : "blah@gmail.com",
+    "email_3" : "blah@gmail.com",
+    "email_4" : "blah@gmail.com",
+    "email_5" : "blah@gmail.com",
+    "marca_modelo_vehiculo_1" : "Honda ACCORD",
+    "marca_modelo_vehiculo_2" : "Honda ACCORD 2",
+    "marca_modelo_vehiculo_3" : "Honda ACCORD 3",
+    "marca_modelo_vehiculo_4" : "Honda ACCORD 4",
+    "marca_modelo_vehiculo_5" : "Honda ACCORD 5",
+    "marca_modelo_vehiculo_6" : "Honda ACCORD 6",
+    "marca_modelo_vehiculo_7" : "Honda ACCORD 7",
+    "tablilla_1" : "jan001",
+    "tablilla_2" : "jan002",
+    "tablilla_3" : "jan003",
+    "tablilla_4" : "jan004",
+    "tablilla_5" : "jan005",
+    "tablilla_6" : "jan006",
+    "tablilla_7" : "jan007",
+    "avi_1" : "avi_1",
+    "avi_2" : "avi_2",
+    "avi_3" : "avi_3",
+    "avi_4" : "avi_4",
+    "avi_5" : "avi_5",
+    "avi_6" : "avi_6",
+    "avi_7" : "avi_7",
+    "unidad_rentada" : true,
+    "nombre_inquilinos_1" : "nombre_inquilinos_1",
+    "nombre_inquilinos_2" : "nombre_inquilinos_2",
+    "nombre_inquilinos_3" : "nombre_inquilinos_3",
+    "fecha_comienzo" : ISODate("2020-05-04T07:00:00.000Z"),
+    "fecha_conclusion" : ISODate("2021-05-04T07:00:00.000Z"),
+    "telefono_inquilino_1" : "000000000",
+    "telefono_inquilino_2" : "7876574891",
+    "email_inquilino_1" : "geovaneartedesign@gmail.com",
+    "email_inquilino_2" : "geovaneartedesign2@gmail.com",
+    "fecha_adquirida" : ISODate("2020-05-04T07:00:00.000Z"),
+    "banco_hipotecario" : "mayo 4 2021",
+    "numero_routing" : 25555644564.0,
+    "numero_cuenta" : 12121545,
+    "cuota_mensual" : "25",
+    "derrama_1" : "2",
+    "derrama_2" : "1",
+    "copia_escritura" : "archive",
+    "id_quickbooks_peachtree" : "21212",
+    "envio_statements" : "no se que es eso123",
+    "nombre_persona_emergencia" : "geovane",
+    "telefono_persona_emergencia" : "7876574891",
+    "relacion_persona_emergencia" : "amigo",
+    "persona_autorizada_entrar_1" : "da silva",
+    "relacion_autorizada_entrar_1" : "amigo",
+    "restrincciones_autorizada_1" : "prueba",
+    "persona_autorizada_entrar_2" : "prueba",
+    "restrincciones_autorizada_2" : "prueba",
+    "persona_autorizada_entrar_3" : "prueba",
+    "relacion_autorizada_entrar_3" : "prueba",
+    "restrincciones_autorizada_3" : "prueba",
+    "persona_autorizada_entrar_4" : "prueba",
+    "relacion_autorizada_entrar_4" : "prueba",
+    "restrincciones_autorizada_4" : "prueba",
+    "persona_autorizada_entrar_5" : "prueba",
+    "relacion_autorizada_entrar_5" : "prueba",
+    "restrincciones_autorizada_5" : "prueba",
+    "persona_autorizada_entrar_6" : "prueba",
+    "relacion_autorizada_entrar_6" : "prueba",
+    "restrincciones_autorizada_6" : "prueba",
+    "persona_autorizada_entrar_7" : "prueba",
+    "relacion_autorizada_entrar_7" : "prueba",
+    "restrincciones_autorizada_7" : "prueba",
+    "persona_autorizada_entrar_8" : "prueba",
+    "relacion_autorizada_entrar_8" : "prueba",
+    "restrincciones_autorizada_8" : "prueba",
+    "persona_autorizada_entrar_9" : "prueba",
+    "relacion_autorizada_entrar_9" : "prueba",
+    "restrincciones_autorizada_9" : "prueba",
+    "persona_autorizada_entrar_10" : "prueba",
+    "relacion_autorizada_entrar_10" : "prueba",
+    "restrincciones_autorizada_10" : "prueba",
+    "img" : "5ea9df3a598c572d14acb03d-338.JPG",
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5eaa01065e196905d75defc4"),
+    "companiaAdmin,urbanizacion_condominio,unidad,property_id,direccion_fisica_1,direccion_fisica_2,pueblo,estado,zip_code,direccion_postal_1,direccion_postal_2,pueblo_postal,estado_postal,zip_code_postal,owners_id,owners_password,owner_1,owner_2,owner_3,owner_4,contacto_1,contacto_2,contacto_3,contacto_4,contacto_5,telefono_1,telefono_2,telefono_3,telefono_4,telefono_5,email_1,email_2,email_3,email_4,email_5,marca_modelo_vehiculo_1,marca_modelo_vehiculo_2,marca_modelo_vehiculo_3,marca_modelo_vehiculo_4,marca_modelo_vehiculo_5,marca_modelo_vehiculo_6,marca_modelo_vehiculo_7,tablilla_1,tablilla_2,tablilla_3,tablilla_4,tablilla_5,tablilla_6,tablilla_7,avi_1,avi_2,avi_3,avi_4,avi_5,avi_6,avi_7,unidad_rentada,nombre_inquilinos_1,nombre_inquilinos_2,nombre_inquilinos_3,fecha_comienzo,fecha_conclusion,telefono_inquilino_1,telefono_inquilino_2,email_inquilino_1,email_inquilino_2,fecha_adquirida,banco_hipotecario,numero_routing,numero_cuenta,cuota_mensual,derrama_1,derrama_2,copia_escritura,id_quickbooks_peachtree,envio_statements,telefono_persona_emergencia,relacion_persona_emergencia,persona_autorizada_entrar_1,relacion_autorizada_entrar_1,restrincciones_autorizada_1,persona_autorizada_entrar_2,restrincciones_autorizada_2,persona_autorizada_entrar_3,relacion_autorizada_entrar_3,restrincciones_autorizada_3,persona_autorizada_entrar_4,relacion_autorizada_entrar_4,restrincciones_autorizada_4,persona_autorizada_entrar_5,relacion_autorizada_entrar_5,restrincciones_autorizada_5,persona_autorizada_entrar_6,relacion_autorizada_entrar_6,restrincciones_autorizada_6,persona_autorizada_entrar_7,relacion_autorizada_entrar_7,restrincciones_autorizada_7,persona_autorizada_entrar_8,relacion_autorizada_entrar_8,restrincciones_autorizada_8,persona_autorizada_entrar_9,relacion_autorizada_entrar_9,restrincciones_autorizada_9,persona_autorizada_entrar_10,relacion_autorizada_entrar_10,restrincciones_autorizada_10,img,Restricciones Autorizada 10,,," : "DCI,Los Corales,201,100001,P.O.BOX 362708,,San Juan,PR,00936,P.O.BOX 362708,,San Juan,PR,00936,loscorales201,XU8181,BANCO POPULAR ATT: JESSICA MARRERO,,,,BANCO POPULAR ATT: JESSICA MARRERO,,,,,787-723-0077 EXT-642220 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,LC201,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"
+}
+
+
+
+import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
+import { TitularModel } from '../models/titular';
+import { TitularesService } from '../services/titulares.service';
+
+
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
+})
+export class LoginComponent implements OnInit {
+
+  constructor( private titularesService: TitularesService, private router: Router) { }
+
+  titular = new TitularModel();
+  loginStorage: boolean = false;
+
+
+  ngOnInit() {
+
+    if ( localStorage.getItem('_id')) {
+
+      this.loginStorage = true;
+      this.router.navigate(['/dashboard']);
+
+    }
+
+  }
+
+  login(  f: NgForm) {
+
+    console.log(f);
+
+    this.titularesService.postLogin(this.titular).subscribe((resp: any) => {
+      console.log(resp);
+      console.log(resp.titularDB);
+
+
+      localStorage.setItem('_id', resp.titularDB._id);
+      localStorage.setItem('token', resp.token);
+      localStorage.setItem('nombre', resp.titularDB.nombre);
+      localStorage.setItem('img', resp.titularDB.img);
+      localStorage.setItem('email', resp.titularDB.email);
+      localStorage.setItem('role', resp.titularDB.role);
+
+
+      localStorage.setItem('titular', JSON.stringify(resp.titularDB));
+
+
+      this.loginStorage = true;
+
+      Swal.fire(
+        'Bienvenido',
+        localStorage.getItem('nombre'),
+        'success'
+      );
+
+      window.location.reload();
+
+      this.router.navigate(['/dashboard']);
+
+
+
+
+    });
+
+
+  }
+
+
+}
+
+
+export class TitularModel {
+
+    // tslint:disable-next-line: variable-name
+owners_id:string    
+companiaAdmin:string;
+property_id:string;
+direccion_fisica_1:string;
+direccion_fisica_2:string;
+pueblo:string;
+estado:string;
+zip_code:string;
+direccion_postal_1:string;
+direccion_postal_2:string;
+pueblo_postal:string;
+estado_postal:string;
+zip_code_postal:string;
+owner_1:string;
+owner_2:string;
+owner_3:string;
+owner_4:string;
+contacto_1:string;
+contacto_2:string;
+contacto_3:string;
+contacto_4:string;
+contacto_5:string;
+telefono_1:string;
+telefono_2:string;
+telefono_3:string;
+telefono_4:string;
+telefono_5:string;
+email_1:string;
+email_2:string;
+email_3:string;
+email_4:string;
+email_5:string;
+marca_modelo_vehiculo_1:string;
+marca_modelo_vehiculo_2:string;
+marca_modelo_vehiculo_3:string;
+marca_modelo_vehiculo_4:string;
+marca_modelo_vehiculo_5:string;
+marca_modelo_vehiculo_6:string;
+marca_modelo_vehiculo_7:string;
+tablilla_1:string;
+tablilla_2:string;
+tablilla_3:string;
+tablilla_4:string;
+tablilla_5:string;
+tablilla_6:string;
+tablilla_7:string;
+avi_1:string;
+avi_2:string;
+avi_3:string;
+avi_4:string;
+avi_5:string;
+avi_6:string;
+avi_7:string;
+unidad_rentada:string;
+nombre_inquilinos_1:string;
+nombre_inquilinos_2:string;
+nombre_inquilinos_3:string;
+fecha_comienzo:string;
+fecha_conclusion:string;
+telefono_inquilino_1:string;
+telefono_inquilino_2:string;
+email_inquilino_1:string;
+email_inquilino_2:string;
+fecha_adquirida:string;
+banco_hipotecario:string;
+numero_routing:string;
+numero_cuenta:string;
+cuota_mensual:string;
+derrama_1:string;
+derrama_2:string;
+copia_escritura:string;
+id_quickbooks_peachtree:string;
+envio_statements:string;
+nombre_persona_emergencia:string;
+telefono_persona_emergencia:string;
+relacion_persona_emergencia:string;
+persona_autorizada_entrar_1:string;
+relacion_autorizada_entrar_1:string;
+restrincciones_autorizada_1:string;
+persona_autorizada_entrar_2:string;
+relacion_autorizada_entrar_2:string;
+restrincciones_autorizada_2:string;
+persona_autorizada_entrar_3:string;
+relacion_autorizada_entrar_3:string;
+restrincciones_autorizada_3:string;
+persona_autorizada_entrar_4:string;
+relacion_autorizada_entrar_4:string;
+restrincciones_autorizada_4:string;
+persona_autorizada_entrar_5:string;
+relacion_autorizada_entrar_5:string;
+restrincciones_autorizada_5:string;
+persona_autorizada_entrar_6:string;
+relacion_autorizada_entrar_6:string;
+restrincciones_autorizada_6:string;
+persona_autorizada_entrar_7:string;
+relacion_autorizada_entrar_7:string;
+restrincciones_autorizada_7:string;
+persona_autorizada_entrar_8:string;
+relacion_autorizada_entrar_8:string;
+restrincciones_autorizada_8:string;
+persona_autorizada_entrar_9:string;
+relacion_autorizada_entrar_9:string;
+restrincciones_autorizada_9:string;
+persona_autorizada_entrar_10:string;
+relacion_autorizada_entrar_10:string;
+restrincciones_autorizada_10:string;
+img:string;
+role:string;
+
+    // tslint:disable-next-line: variable-name
+    owners_password: string;
+
+}
+
+
+
+    companiaAdmin
+    property_id
+    direccion_fisica_1
+    direccion_fisica_2
+    pueblo
+    estado
+    zip_code
+    direccion_postal_1
+    direccion_postal_2
+    pueblo_postal
+    estado_postal
+    zip_code_postal
+    owner_1
+    owner_2
+    owner_3
+    owner_4
+    contacto_1
+    contacto_2
+    contacto_3
+    contacto_4
+    contacto_5
+    telefono_1
+    telefono_2
+    telefono_3
+    telefono_4
+    telefono_5
+    email_1
+    email_2
+    email_3
+    email_4
+    email_5
+    marca_modelo_vehiculo_1
+    marca_modelo_vehiculo_2
+    marca_modelo_vehiculo_3
+    marca_modelo_vehiculo_4
+    marca_modelo_vehiculo_5
+    marca_modelo_vehiculo_6
+    marca_modelo_vehiculo_7
+    tablilla_1
+    tablilla_2
+    tablilla_3
+    tablilla_4
+    tablilla_5
+    tablilla_6
+    tablilla_7
+    avi_1
+    avi_2
+    avi_3
+    avi_4
+    avi_5
+    avi_6
+    avi_7
+    unidad_rentada
+    nombre_inquilinos_1
+    nombre_inquilinos_2
+    nombre_inquilinos_3
+    fecha_comienzo
+    fecha_conclusion
+    telefono_inquilino_1
+    telefono_inquilino_2
+    email_inquilino_1
+    email_inquilino_2
+    fecha_adquirida
+    banco_hipotecario
+    numero_routing
+    numero_cuenta
+    cuota_mensual
+    derrama_1
+    derrama_2
+    copia_escritura
+    id_quickbooks_peachtree
+    envio_statements
+    nombre_persona_emergencia
+    telefono_persona_emergencia
+    relacion_persona_emergencia
+    persona_autorizada_entrar_1
+    relacion_autorizada_entrar_1
+    restrincciones_autorizada_1
+    persona_autorizada_entrar_2
+    relacion_autorizada_entrar_2
+    restrincciones_autorizada_2
+    persona_autorizada_entrar_3
+    relacion_autorizada_entrar_3
+    restrincciones_autorizada_3
+    persona_autorizada_entrar_4
+    relacion_autorizada_entrar_4
+    restrincciones_autorizada_4
+    persona_autorizada_entrar_5
+    relacion_autorizada_entrar_5
+    restrincciones_autorizada_5
+    persona_autorizada_entrar_6
+    relacion_autorizada_entrar_6
+    restrincciones_autorizada_6
+    persona_autorizada_entrar_7
+    relacion_autorizada_entrar_7
+    restrincciones_autorizada_7
+    persona_autorizada_entrar_8
+    relacion_autorizada_entrar_8
+    restrincciones_autorizada_8
+    persona_autorizada_entrar_9
+    relacion_autorizada_entrar_9
+    restrincciones_autorizada_9
+    persona_autorizada_entrar_10
+    relacion_autorizada_entrar_10
+    restrincciones_autorizada_10
+    img
+    role
+
+
+
+    //=====================================
+//         UPDATE TITULAR LIMITADO = PUT
+//=====================================
+
+function updateTitular(req, res) {
+    let id = req.params.id;
+    let body = req.body;
+  
+    Titular.findById(id, (err, titular) => {
+      if (err) {
+        return res.status(500).json({
+          ok: false,
+          message: "Something on the server didnt work right put.",
+          err,
+        });
+      }
+  
+      if (!titular) {
+        res.status(404).json({
+          ok: false,
+          message: "A file doesnt exist at that address",
+          titular,
+        });
+      }
+  
+      titular.companiaAdmin = body.companiaAdmin;
+      titular.property_id = body.property_id;
+      titular.direccion_fisica_1 = body.direccion_fisica_1;
+      titular.direccion_fisica_2 = body.direccion_fisica_2;
+      titular.pueblo = body.pueblo;
+      titular.estado = body.estado;
+      titular.zip_code = body.zip_code;
+      titular.direccion_postal_1 = body.direccion_postal_1;
+      titular.direccion_postal_2 = body.direccion_postal_2;
+      titular.pueblo_postal = body.pueblo_postal;
+      titular.estado_postal = body.estado_postal;
+      titular.zip_code_postal = body.zip_code_postal;
+      titular.owner_1 = body.owner_1;
+      titular.owner_2 = body.owner_2;
+      titular.owner_3 = body.owner_3;
+      titular.owner_4 = body.owner_4;
+      titular.contacto_1 = body.contacto_1;
+      titular.contacto_2 = body.contacto_2;
+      titular.contacto_3 = body.contacto_3;
+      titular.contacto_4 = body.contacto_4;
+      titular.contacto_5 = body.contacto_5;
+      titular.telefono_1 = body.telefono_1;
+      titular.telefono_2 = body.telefono_2;
+      titular.telefono_3 = body.telefono_3;
+      titular.telefono_4 = body.telefono_4;
+      titular.telefono_5 = body.telefono_5;
+      titular.email_1 = body.email_1;
+      titular.email_2 = body.email_2;
+      titular.email_3 = body.email_3;
+      titular.email_4 = body.email_4;
+      titular.email_5 = body.email_5;
+      titular.marca_modelo_vehiculo_1 = body.marca_modelo_vehiculo_1;
+      titular.marca_modelo_vehiculo_2 = body.marca_modelo_vehiculo_2;
+      titular.marca_modelo_vehiculo_3 = body.marca_modelo_vehiculo_3;
+      titular.marca_modelo_vehiculo_4 = body.marca_modelo_vehiculo_4;
+      titular.marca_modelo_vehiculo_5 = body.marca_modelo_vehiculo_5;
+      titular.marca_modelo_vehiculo_6 = body.marca_modelo_vehiculo_6;
+      titular.marca_modelo_vehiculo_7 = body.marca_modelo_vehiculo_7;
+      titular.tablilla_1 = body.tablilla_1;
+      titular.tablilla_2 = body.tablilla_2;
+      titular.tablilla_3 = body.tablilla_3;
+      titular.tablilla_4 = body.tablilla_4;
+      titular.tablilla_5 = body.tablilla_5;
+      titular.tablilla_6 = body.tablilla_6;
+      titular.tablilla_7 = body.tablilla_7;
+      titular.avi_1 = body.avi_1;
+      titular.avi_2 = body.avi_2;
+      titular.avi_3 = body.avi_3;
+      titular.avi_4 = body.avi_4;
+      titular.avi_5 = body.avi_5;
+      titular.avi_6 = body.avi_6;
+      titular.avi_7 = body.avi_7;
+      titular.unidad_rentada = body.unidad_rentada;
+      titular.nombre_inquilinos_1 = body.nombre_inquilinos_1;
+      titular.nombre_inquilinos_2 = body.nombre_inquilinos_2;
+      titular.nombre_inquilinos_3 = body.nombre_inquilinos_3;
+      titular.fecha_comienzo = body.fecha_comienzo;
+      titular.fecha_conclusion = body.fecha_conclusion;
+      titular.telefono_inquilino_1 = body.telefono_inquilino_1;
+      titular.telefono_inquilino_2 = body.telefono_inquilino_2;
+      titular.email_inquilino_1 = body.email_inquilino_1;
+      titular.email_inquilino_2 = body.email_inquilino_2;
+      titular.fecha_adquirida = body.fecha_adquirida;
+      titular.banco_hipotecario = body.banco_hipotecario;
+      titular.numero_routing = body.numero_routing;
+      titular.numero_cuenta = body.numero_cuenta;
+      titular.cuota_mensual = body.cuota_mensual;
+      titular.derrama_1 = body.derrama_1;
+      titular.derrama_2 = body.derrama_2;
+      titular.copia_escritura = body.copia_escritura;
+      titular.id_quickbooks_peachtree = body.id_quickbooks_peachtree;
+      titular.envio_statements = body.envio_statements;
+      titular.nombre_persona_emergencia = body.nombre_persona_emergencia;
+      titular.telefono_persona_emergencia = body.telefono_persona_emergencia;
+      titular.relacion_persona_emergencia = body.relacion_persona_emergencia;
+      titular.persona_autorizada_entrar_1 = body.persona_autorizada_entrar_1;
+      titular.relacion_autorizada_entrar_1 = body.relacion_autorizada_entrar_1;
+      titular.restrincciones_autorizada_1 = body.restrincciones_autorizada_1;
+      titular.persona_autorizada_entrar_2 = body.persona_autorizada_entrar_2;
+      titular.relacion_autorizada_entrar_2 = body.relacion_autorizada_entrar_2;
+      titular.restrincciones_autorizada_2 = body.restrincciones_autorizada_2;
+      titular.persona_autorizada_entrar_3 = body.persona_autorizada_entrar_3;
+      titular.relacion_autorizada_entrar_3 = body.relacion_autorizada_entrar_3;
+      titular.restrincciones_autorizada_3 = body.restrincciones_autorizada_3;
+      titular.persona_autorizada_entrar_4 = body.persona_autorizada_entrar_4;
+      titular.relacion_autorizada_entrar_4 = body.relacion_autorizada_entrar_4;
+      titular.restrincciones_autorizada_4 = body.restrincciones_autorizada_4;
+      titular.persona_autorizada_entrar_5 = body.persona_autorizada_entrar_5;
+      titular.relacion_autorizada_entrar_5 = body.relacion_autorizada_entrar_5;
+      titular.restrincciones_autorizada_5 = body.restrincciones_autorizada_5;
+      titular.persona_autorizada_entrar_6 = body.persona_autorizada_entrar_6;
+      titular.relacion_autorizada_entrar_6 = body.relacion_autorizada_entrar_6;
+      titular.restrincciones_autorizada_6 = body.restrincciones_autorizada_6;
+      titular.persona_autorizada_entrar_7 = body.persona_autorizada_entrar_7;
+      titular.relacion_autorizada_entrar_7 = body.relacion_autorizada_entrar_7;
+      titular.restrincciones_autorizada_7 = body.restrincciones_autorizada_7;
+      titular.persona_autorizada_entrar_8 = body.persona_autorizada_entrar_8;
+      titular.relacion_autorizada_entrar_8 = body.relacion_autorizada_entrar_8;
+      titular.restrincciones_autorizada_8 = body.restrincciones_autorizada_8;
+      titular.persona_autorizada_entrar_9 = body.persona_autorizada_entrar_9;
+      titular.relacion_autorizada_entrar_9 = body.relacion_autorizada_entrar_9;
+      titular.restrincciones_autorizada_9 = body.restrincciones_autorizada_9;
+      titular.persona_autorizada_entrar_10 = body.persona_autorizada_entrar_10;
+      titular.relacion_autorizada_entrar_10 = body.relacion_autorizada_entrar_10;
+      titular.restrincciones_autorizada_10 = body.restrincciones_autorizada_10;
+      titular.img = body.img;
+      titular.role = body.role;
+  
+      titular.save((err, titularUpdated) => {
+        if (err) {
+          return res.status(500).json({
+            ok: false,
+            message:
+              "Server didnt understand the URL you gave it, You need will check ID.",
+            err,
+          });
+        }
+  
+        if (!titularUpdated) {
+          res.status(400).json({
+            ok: false,
+            message:
+              "Server didnt understand the URL you gave it, You need will check ID.",
+            err,
+          });
+        }
+  
+        return res.status(200).json({
+          ok: true,
+          message: 'Everything is normal, user updated")',
+          titular: titularUpdated,
+        });
+      });
+    });
+  }
+  
+
+
+
+
+
+
+  function updateTitular(req, res, next) {
+  let id = req.params.id;
+  let body = req.body;
+  let current_password = req.body
+
+  // Para actualizar el objeto completo cambiando solamente la propiedad que quieres sin borrar la demas
+  // tienes que pasar el body sin iniciar las propiedades
+
+
+  Titular.findByIdAndUpdate(id, body, {new: true, useFindAndModify: true },(err, titular) =>{
+
+      if (err) {
+        return res.status(500).json({
+          ok: false,
+          message: "Something on the server didnt work right put.",
+          err,
+        });
+      }
+  
+      if (!titular) {
+        res.status(404).json({
+          ok: false,
+          message: "A file doesnt exist at that address",
+          user,
+        });
+      }
+   
+      const saltRounds = 10;
+      
+      //si el password viene del request
+
+      try{
+
+        if(current_password.current_password === titular.owners_password){
+
+          if(body.owners_password != null) {
+            titular.owners_password = bcrypt.hashSync(body.owners_password, saltRounds);
+          }
+    
+          console.log('encriptado', titular.owners_password);
+    
+          // aqui usas bcrypt
+          titular.save((err, titularUpdated) => {
+            if (err) {
+              return res.status(500).json({
+                ok: false,
+                message:
+                  "Server didnt understand the URL you gave it, You need will check ID.",
+                err,
+              });
+            }
+      
+            if (!titularUpdated) {
+              res.status(400).json({
+                ok: false,
+                message:
+                  "Server didnt understand the URL you gave it, You need will check ID.",
+                err,
+              });
+            }
+      
+            return res.status(200).json({
+              ok: true,
+              message: 'Everything is normal, user updated")',
+              user: titularUpdated,
+            });
+    
+          });
+    
+  
+         
+
+      }
+
+      
+    
+        
+      }
+      catch(err){
+
+      }
+    
+      
+      
+  })
+}
