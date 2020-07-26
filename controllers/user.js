@@ -228,15 +228,12 @@ function registerUser(req, res) {
       // create reusable transporter object using the default SMTP transport
       let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        service: 'gmail',
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
           user: process.env.EMAIL, // generated ethereal user
           pass: process.env.PASSWORD,
-          tls: {
-            ciphers: 'SSLv3'
-            }// generated ethereal password
+          
         },
         
     
