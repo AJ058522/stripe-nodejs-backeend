@@ -232,8 +232,8 @@ function registerUser(req, res) {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-          user: process.env.USER, // generated ethereal user
-          pass: process.env.PASS,
+          user: process.env.EMAIL, // generated ethereal user
+          pass: process.env.PASSWORD,
           tls: {
             ciphers: 'SSLv3'
             }// generated ethereal password
