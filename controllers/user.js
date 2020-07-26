@@ -230,7 +230,7 @@ function registerUser(req, res) {
         host: "smtp.gmail.com",
         service: 'gmail',
         port: 587,
-        secure: false, // true for 465, false for other ports
+        secure: true, // true for 465, false for other ports
         auth: {
           user: process.env.EMAIL, // generated ethereal user
           pass: process.env.PASSWORD,
@@ -247,7 +247,6 @@ function registerUser(req, res) {
     
       
       let url_logo = 'assets/send_to_puerto.png'
-      let url_site = 'http://localhost:3000'
       let email = 'geovaneartedesign@gmail.com'
     
       // send mail with defined transport object
@@ -261,7 +260,7 @@ function registerUser(req, res) {
         attachments: [
           {
               foto_frontal: 'foto_frontal',
-              path: `${url_site}/${url_logo}`,
+              path: `${process.env.URL_SITE}/${url_logo}`,
           }
         ],
         html: `

@@ -55,4 +55,4 @@ process.env.EMAIL = 'sendtopuertorico@gmail.com',
 process.env.PASSWORD = 'sendtopuertoricosolution2019'
 
 process.env.URL_SITE = process.env.URL_SITE || 'http://localhost:3000'
-//process.env.URL_SITE = 'https://superjunkerpr.herokuapp.com'
+//process.env.URL_SITE = 'https://send-to-puerto-rico.herokuapp.com'
