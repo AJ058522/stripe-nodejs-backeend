@@ -51,8 +51,8 @@ process.env.AWS_SECRET = process.env.AWS_SECRET || '0bgoJWcFhRTvNB4hLW/Jm1BkVHem
 
 //Auth config nodemailer
 
-process.env.user = 'sendtopuertorico@gmail.com',
-process.env.pass = 'sendtopuertoricosolution2019'
+process.env.EMAIL = 'sendtopuertorico@gmail.com',
+process.env.PASSWORD = 'sendtopuertoricosolution2019'
 
 process.env.URL_SITE = process.env.URL_SITE || 'http://localhost:3000'
 //process.env.URL_SITE = 'https://superjunkerpr.herokuapp.com'
