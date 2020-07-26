@@ -20,8 +20,7 @@ if(process.env.NODE_ENV === 'dev'){
    
 
     urlDB = process.env.MONGO_URI;
-    //urlDB = 'mongodb://localhost:27017/registros_PR' //mongodb+srv://developer-dci-pr:Geov2020!@cluster0-nxlwx.mongodb.net/DC_cond_DB
-   // urlDB = 'mongodb+srv://geovanedasilva:nelliebeach4205@cluster0-bipz8.mongodb.net/registros_PR'
+
 
 }
 
@@ -44,6 +43,10 @@ process.env.expiresIn = '1000h';
 //SEED
 
 process.env.SEED = process.env.SEED || 'key-desarollo-secrets-yes'
+
+process.env.AWS_ID = process.env.AWS_ID || 'AKIAYHSJ7FZWIV5GG5UJ'
+process.env.AWS_SECRET = process.env.AWS_SECRET || '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'
+
 
 //Auth config nodemailer
 

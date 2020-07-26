@@ -13,7 +13,10 @@ let rolesValidos = {
 var userSchema = new Schema({
 
     nombre: {  type: String, required: [false, ' El nombre es requerido']},
-    direccion: {  type: String, required: [false, ' El direccion es requerido']},
+    n_buzon: {  type: Number, unique: true, required: [false, ' El buzon es requerido']},
+    phone: {  type: String, required: [false, ' El phone es requerido']},
+    address: {  type: String, required: [false, ' El address es requerido']},
+    termino: {  type: Boolean, required: [false, ' La termino es requerido']},
     email: {  type: String, unique: true, required: [false, ' El email es requerido']},
     password: {  type: String, required: [false, ' El password es requerido']},
     img: {  type: String, required: [false, ' la img es requerido']},

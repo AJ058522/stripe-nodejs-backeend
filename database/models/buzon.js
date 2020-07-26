@@ -8,9 +8,9 @@ var Schema = mongoose.Schema;
 
 var buzonSchema = new Schema({
 
-    n_buzon: {  type: String, unique: true, required: [false, ' El buzon es requerido']},
+    n_buzon: {  type: Number, unique: true, required: [false, ' El buzon es requerido']},
     name: {  type: String, required: [false, ' El name es requerido']},
-    email: {  type: String, required: [false, ' El email es requerido']},
+    email: {  type: String, unique: true, required: [false, ' El email es requerido']},
     phone: {  type: String, required: [false, ' El phone es requerido']},
     address: {  type: String, required: [false, ' El address es requerido']},
     message: {  type: String, required: [false, ' El message es requerido']},

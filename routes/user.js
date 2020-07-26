@@ -14,10 +14,10 @@ let  auth = require('../middlewares/auth'); // auth
 const { verificaRole_Admin } = require('../middlewares/auth');
 
 
-router.post('/register',[auth.verificaToken, verificaRole_Admin], userController.registerUser); // post register user
+router.post('/register', userController.registerUser); // post register user
 
 router.post('/login', userController.login); // post login user
-router.put('/user/:id',[auth.verificaToken, verificaRole_Admin], userController.updateUser); // get list users
+router.put('/user/:id', auth.verificaToken, userController.updateUser); // get list users
 
 
 //

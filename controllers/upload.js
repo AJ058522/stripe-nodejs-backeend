@@ -80,18 +80,6 @@ function UploadImage( req, res, next){
      }
  });
 
- archivo.mv( path, err =>{  //para mover el archivo a la carpeta correcta
-    if(err){
-       return res.status(500).json({
-        
-           ok: false,
-           mensaje: "Error al mover archivo",
-           errors: err
-   
-       });
-    }
-});
-
  return subitPorTipo( tipo, id, nombreArchivo, res); // funccion para subir archivo
 
  };
@@ -106,7 +94,10 @@ function subitPorTipo( tipo, id, nombreArchivo, res) {
             var pathViejo = './uploads/users/' + user.img;
 
             //metodo para borrar imagen vieja | Obg: ese metodo no funciona en algunas versiones de node
+            if( fs.existsSync(pathViejo)){
+                fs.unlinkSync( pathViejo );
 
+            }
 
             user.img = nombreArchivo;
 
@@ -133,7 +124,7 @@ function subitPorTipo( tipo, id, nombreArchivo, res) {
 
             //metodo para borrar imagen vieja | Obg: ese metodo no funciona en algunas versiones de node
             if( fs.existsSync(pathViejo)){
-                fs.unlink( pathViejo );
+                fs.unlinkSync( pathViejo );
   
             }
 

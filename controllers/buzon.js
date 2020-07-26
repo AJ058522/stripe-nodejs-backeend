@@ -5,6 +5,28 @@ let Buzon = require('../database/models/buzon')
 const nodemailer = require("nodemailer");
 const email = require('../services/email');
 
+const AWS = require('aws-sdk');
+
+
+const credentials = {
+  id: process.env.AWS_ID,
+  secret: process.env.AWS_SECRET
+}
+
+
+// Set region
+const code = "+1"
+//configuration messager amazon
+// Set region
+AWS.config.update({
+    region: 'us-east-1',
+    accessKeyId: credentials.id,
+    secretAccessKey: credentials.secret
+
+}); 
+// Create publish parameters
+
+
 
 
 function getBuzones( req, res){
@@ -60,7 +82,6 @@ function getBuzones( req, res){
 
 
 
-
 function registroBuzon( req, res){
 
 
@@ -92,6 +113,39 @@ function registroBuzon( req, res){
 
         console.log(buzon.n_buzon); // Aqui esta o numero de buzao que se enviara por correio
         
+        if(body.email == Buzon.find({})){
+         return console.log('es igual');
+        }
+
+        let respTextMessage = {
+          message: `Gracias por registrarse con Send To Puerto Rico, su número de buzón es "${buzon.n_buzon}", `,
+          direccionMiami: `Su dirección asignada: 13461 NW 19 Lane, Miami FL 33182. `,
+          important:  `Es importante que el número de buzón se encuentre seguido del nombre para efectos de identificar el paquete.`,
+          nota: `NOTA: Refierase a los terminos y condiciones sobre tiempos de entrega, seguros y costos. Si tiene dudas puede llamarnos al 787-981-1421.`
+
+
+        }
+
+
+        let OkMessage =  respTextMessage.message + respTextMessage.direccionMiami + respTextMessage.important+ respTextMessage.nota
+
+        let params = {
+          Message: `${OkMessage}`, /* required */
+          PhoneNumber: `${code}${body.phone}`,
+        };
+        
+        console.log(params.Message);
+        
+        function sendSMS(params) {
+           
+          var publishTextPromise = new AWS.SNS().publish(params).promise();
+          // Handle promise's fulfilled/rejected states
+          publishTextPromise.then(function (data) {
+              console.log("MessageID is " + data.MessageId);
+          }).catch(function (err) {
+              console.error(err, err.stack);
+          });
+        }
               
 
         buzon.save((err, newBuzon)=>{
@@ -100,7 +154,7 @@ function registroBuzon( req, res){
              return   res.status(500).json({
                     ok: true,
                     message:'Error 500 of tada base to creative buzon',
-                    error: error
+                    error: err
                 })
                 
     
@@ -207,7 +261,8 @@ function registroBuzon( req, res){
 
 
 
-    
+              sendSMS(params);
+
             res.status(201).json({
                 ok: true,
                 message:' New buzon is ready in the of databese',
