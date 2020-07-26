@@ -40,7 +40,7 @@ function getUsers(req, res) {
   let desde = req.query.desde || 0;
   desde = Number(desde);
 
-  let limite = req.query.limite || 100000000;
+  let limite = req.query.limite || 1000000000000000000;
   limite = Number(limite);
   
 
@@ -68,7 +68,7 @@ function getUsers(req, res) {
         //jqueri para contar usuarios
 
 
-        for(let i=0;i<users.length;i++){
+       /* for(let i=0;i<users.length;i++){
 
 
           users[i].password = [];
@@ -92,7 +92,8 @@ function getUsers(req, res) {
 
 
         }
-
+        
+*/
 
 
 
@@ -151,7 +152,7 @@ function registerUser(req, res) {
 
   var body = req.body;
   
-  let initBuzon = 700;
+  let initBuzon = 9719;
   let newCount = counts + initBuzon
   // create object user
   var user = new User({
