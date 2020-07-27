@@ -165,8 +165,10 @@ function registerUser(req, res) {
     img: body.img,
     estado: body.estado,
     termino: body.termino,
+    data_create: new Date(),
     role: body.role,
   });
+
 
   if(body.email == User.find({})){
     return console.log('es igual');
