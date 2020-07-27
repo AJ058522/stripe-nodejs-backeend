@@ -165,7 +165,7 @@ function registerUser(req, res) {
     img: body.img,
     estado: body.estado,
     termino: body.termino,
-    data_create: new Date(),
+    date_create: new Date(),
     role: body.role,
   });
 
