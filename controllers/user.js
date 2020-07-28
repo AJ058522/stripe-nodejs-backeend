@@ -46,7 +46,7 @@ function getUsers(req, res) {
 
   //  Usuario.find({ estado: true },'id name img role email')  nao eliminar usuario, apenas cambiar de estado
 
-  User.find({}, 'id img  email nombre role n_buzon address')
+  User.find({}, 'id img  email nombre role n_buzon address phone')
   .populate('titulares', 'contatos email titulares')
     .skip(desde)
     .limit(limite)
