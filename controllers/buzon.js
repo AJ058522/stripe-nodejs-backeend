@@ -263,7 +263,7 @@ function registroBuzon( req, res){
 
               sendSMS(params);
 
-            res.status(201).json({
+            return res.status(201).json({
                 ok: true,
                 message:' New buzon is ready in the of databese',
                 buzon: newBuzon,
@@ -274,10 +274,6 @@ function registroBuzon( req, res){
 
       });
 
-    
-
-
-    
 
     
 }
@@ -290,4 +286,5 @@ module.exports = {
 
     registroBuzon,
     getBuzones
+
 }

@@ -31,6 +31,8 @@ var userRoutes = require('./routes/user');
 var imagesRoutes = require('./routes/images');
 var uploadRoutes = require('./routes/upload');
 var buzonRoutes = require('./routes/buzon');
+var packageRoutes = require('./routes/package');
+
 
 
 
@@ -41,6 +43,8 @@ var buzonRoutes = require('./routes/buzon');
 app.use('/api', imagesRoutes)
 app.use('/api', uploadRoutes)
 app.use('/api', buzonRoutes)
+app.use('/api', packageRoutes)
+
 
 
 
