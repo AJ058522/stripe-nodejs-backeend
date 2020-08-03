@@ -189,10 +189,43 @@ function updatePackage(req, res) {
    
   }
 
+  //=====================================
+//        REMOVE Package = DELETE
+//=====================================
+
+function deletePackage(req, res) {
+  let id = req.params.id;
+
+  Package.findByIdAndRemove(id, (err, packageDelete) => {
+    if (err) {
+      return res.status(500).json({
+        ok: false,
+        message: "Something on the server didnt work right.",
+        err,
+      });
+    }
+
+    if (!packageDelete) {
+    return  res.status(400).json({
+        ok: false,
+        message:
+          "Server didnt understand the URL you gave it, You need will check ID.",
+      });
+    }
+
+    return res.status(200).json({
+      ok: true,
+      message: "Everything is normal, user deleted success",
+      package: packageDelete,
+    });
+  });
+}
+
 
 module.exports = {
     postPackage,
     getPackages,
     getPackage,
-    updatePackage
+    updatePackage,
+    deletePackage
   };
