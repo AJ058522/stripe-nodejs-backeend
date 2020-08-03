@@ -46,18 +46,18 @@ let verificaRole_Admin = (req, res, next) =>{
 
 }
 
-let verificaRole_titular = (req, res, next) =>{
+let verificaRole_User = (req, res, next) =>{
 
     let user = req.user;
 
-    if(user.role === 'TITULAR_ROLE'){
+    if(user.role === 'USER_ROLE'){
        
 
     }else{
         return res.status(401).json({
             ok:false,
             mensaje:{
-                mensaje:'Must be authenticated TITULAR_ ROLE',
+                mensaje:'Must be authenticated USER_ ROLE',
             
             }
             
@@ -71,6 +71,6 @@ let verificaRole_titular = (req, res, next) =>{
 module.exports ={
     verificaToken, 
     verificaRole_Admin,
-    verificaRole_titular
+    verificaRole_User
 }
 

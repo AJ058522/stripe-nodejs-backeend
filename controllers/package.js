@@ -15,7 +15,7 @@ function getPackages(req, res) {
     //  Usuario.find({ estado: true },'id name img role email')  nao eliminar usuario, apenas cambiar de estado
   
     Package.find({})
-    .populate('user', 'nombre n_buzon phone address email date_create')
+    .populate('user', 'nombre n_buzon phone address email date_create ref_id_user')
       .skip(desde)
       .limit(limite)
       .exec((err, packages) => {
@@ -48,7 +48,7 @@ function getPackages(req, res) {
           return res.status(200).json({
             ok: true,
             packages: packages,
-            TotalPackeges: counts,
+            TotalPackages: counts,
           });
         });
     });
@@ -62,7 +62,7 @@ function getPackage(req, res) {
 
   
     Package.findById(
-    id, "saller name store track_number p l w h date_create nota")
+    id, "saller name store track_number p l w h date_create nota ref_id_user")
     .populate('user', 'nombre n_buzon phone address email date_create')
     .exec((err, packageDB) => {
     if (err) {
@@ -96,9 +96,11 @@ function postPackage( req, res){
     l: body.l,
     w: body.w,
     h: body.h,
+    delivery: body.delivery,
     nota: body.nota,
     date_create: new Date(),
-    user: req.user._id
+    user: req.user._id,
+    ref_id_user: req.user._id
 
 
 })

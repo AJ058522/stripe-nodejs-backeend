@@ -21,7 +21,7 @@ router.put('/user/:id', auth.verificaToken, userController.updateUser); // get l
 
 
 //
-router.get('/user' , [auth.verificaToken, verificaRole_Admin], userController.getUsers); // get list users
+router.get('/user' , [auth.verificaToken, verificaRole_Admin, ], userController.getUsers); // get list users
 router.get('/user/:id' , userController.getUser); // get list users
 
 

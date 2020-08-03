@@ -40,7 +40,7 @@ function getUsers(req, res) {
   let desde = req.query.desde || 0;
   desde = Number(desde);
 
-  let limite = req.query.limite || 1000000000000000000;
+  let limite = req.query.limite || 1000000000000000000000000000000000000000000;
   limite = Number(limite);
   
 
@@ -124,7 +124,7 @@ function getUser(req, res) {
   
 User.findById(
   id,
-  "nombre email img role id n_buzon phone address password")
+  "nombre email img role id n_buzon phone address")
 .exec((err, userDB) => {
   if (err) {
     return res.status(500).json({
@@ -230,8 +230,8 @@ function registerUser(req, res) {
       // create reusable transporter object using the default SMTP transport
       let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 465,
-        secure: true, // true for 465, false for other ports
+        port: 587,
+        secure: false, // true for 465, false for other ports
         auth: {
           user: process.env.EMAIL, // generated ethereal user
           pass: process.env.PASSWORD,
@@ -305,11 +305,11 @@ function registerUser(req, res) {
 
 
 
-    sendSMS(params);
+     sendSMS(params);
 
     
 
-    return res.status(201).json({
+     res.status(201).json({
       ok: true,
       message: 'Everything is normal ("201 Created")',
       user: userStored,

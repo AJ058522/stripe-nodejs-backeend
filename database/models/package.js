@@ -17,6 +17,7 @@ var packageSchema = new Schema({
     h: {  type: Number, required: [false, ' El altura']},
     date_create: {  type: Date, required: [false, ' El date']},
     nota: {  type: String, required: [false, ' La nota es requerido']},
+    delivery: {  type: String, required: [false, ' La delivery es requerido']},
     user:{ type: Schema.Types.ObjectId, ref: 'User'},
 
 
