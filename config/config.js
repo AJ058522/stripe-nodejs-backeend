@@ -54,5 +54,5 @@ process.env.AWS_SECRET = process.env.AWS_SECRET || '0bgoJWcFhRTvNB4hLW/Jm1BkVHem
 process.env.EMAIL = process.env.EMAIL  ||'sendtopuertorico@gmail.com',
 process.env.PASSWORD = process.env.PASSWORD ||'sendtopuertoricosolution2019'
 
-process.env.URL_SITE = process.env.URL_SITE || 'http://localhost:3000'
-//process.env.URL_SITE = 'https://send-to-puerto-rico.herokuapp.com'
+//process.env.URL_SITE = process.env.URL_SITE || 'http://localhost:3000'
+process.env.URL_SITE = 'https://send-to-puerto-rico.herokuapp.com'
