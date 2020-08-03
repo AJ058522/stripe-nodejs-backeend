@@ -40,7 +40,7 @@ function getUsers(req, res) {
   let desde = req.query.desde || 0;
   desde = Number(desde);
 
-  let limite = req.query.limite || 1000000000000000000000000000000000000000000;
+  let limite = req.query.limite || 1000000000000000000;
   limite = Number(limite);
   
 
@@ -102,7 +102,7 @@ function getUsers(req, res) {
 
 
 
-
+        console.log( '######', users);
         return res.status(200).json({
           ok: true,
           users: users,
