@@ -182,7 +182,7 @@ function registerUser(req, res) {
 
 
    }
-   console.log('TIPO USER EMAIL', body.mail);
+   console.log('TIPO USER EMAIL', body.email);
 
    console.log('TIPO PASSWORD', body.password);
    let pr = 'PR-'
