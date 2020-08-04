@@ -239,9 +239,9 @@ function registerUser(req, res) {
         },
         
     
-        // tls:{
-        //   rejectUnauthorized: false
-        // }
+         tls:{
+          rejectUnauthorized: false
+         }
       });
     
       
@@ -309,7 +309,7 @@ function registerUser(req, res) {
 
     
 
-     res.status(201).json({
+    return res.status(201).json({
       ok: true,
       message: 'Everything is normal ("201 Created")',
       user: userStored,
