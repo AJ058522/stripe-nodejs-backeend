@@ -182,6 +182,9 @@ function registerUser(req, res) {
 
 
    }
+   console.log('TIPO USER EMAIL', body.mail);
+
+   console.log('TIPO PASSWORD', body.password);
    let pr = 'PR-'
 
    let OkMessage =  respTextMessage.message + respTextMessage.direccionMiami + respTextMessage.important+ respTextMessage.nota
