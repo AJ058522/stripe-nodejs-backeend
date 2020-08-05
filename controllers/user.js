@@ -250,7 +250,7 @@ function registerUser(req, res) {
     
       
       let url_logo = 'assets/send_to_puerto.png'
-      let replay = 'sendtopuertorico@gmail.com'
+      let replay = 'info@sendtopuertorico.com'
       // send mail with defined transport object
       let info = await transporter.sendMail({
         from: `info@sendtopuertorico.com`, // sender address
