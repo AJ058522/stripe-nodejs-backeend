@@ -21,7 +21,7 @@ if(process.env.NODE_ENV === 'dev'){
 
     urlDB = process.env.MONGO_URI;
      //urlDB  //mongodb+srv://developer-dci-pr:Geov2020!@cluster0-nxlwx.mongodb.net/DC_cond_DB
-    // urlDB = 'mongodb+srv://geovanedasilva:nelliebeach4205@cluster0-bipz8.mongodb.net/tests'
+     urlDB = 'mongodb+srv://geovanedasilva:nelliebeach4205@cluster0-bipz8.mongodb.net/tests'
 
 }
 
