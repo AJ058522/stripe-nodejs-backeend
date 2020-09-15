@@ -524,7 +524,6 @@ async function postPackage( req, res){
   });
 
 
-  console.log('Soy un email', body.email);
     
 
   let user  = await User.findById(id);
