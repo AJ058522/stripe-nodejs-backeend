@@ -15,7 +15,7 @@ function getPackages(req, res) {
     //  Usuario.find({ estado: true },'id name img role email')  nao eliminar usuario, apenas cambiar de estado
   
     Package.find({})
-    .populate('user', 'nombre n_buzon phone address email date_create ref_id_user status')
+    .populate('user', 'nombre n_buzon phone address email date_create ref_id_user')
       .skip(desde)
       .limit(limite)
       .exec((err, packages) => {
@@ -62,8 +62,8 @@ function getPackage(req, res) {
 
   
     Package.findById(
-    id, "saller name store track_number p l w h date_create nota ref_id_user status")
-    .populate('user', 'nombre n_buzon phone address email date_create status')
+    id, "saller status name store track_number p l w h date_create nota ref_id_user price description")
+    .populate('user', 'nombre n_buzon phone address email date_create description price token')
     .exec((err, packageDB) => {
     if (err) {
         return res.status(500).json({
@@ -85,8 +85,9 @@ function getPackage(req, res) {
 
 
 function postPackage( req, res){
-    let body = req.body
 
+    let body = req.body
+    let status = false
     var paquete = new Package({
     saller: body.saller,
     name: body.name,
@@ -98,14 +99,15 @@ function postPackage( req, res){
     h: body.h,
     delivery: body.delivery,
     nota: body.nota,
-    status: body.status,
     date_create: new Date(),
-    user: req.user._id,
-    ref_id_user: req.user._id
+    price:body.price,
+    description: body.description,
+    token: body.token,
+    //user: req.user._id,
+    //ref_id_user: req.user._id
+    
+  });
 
-
-})
-   
     
 paquete.save((err, packageSAVED) =>{
 
@@ -133,8 +135,9 @@ paquete.save((err, packageSAVED) =>{
 
 })
 
+  
+  
 }
-
 
 function updatePackage(req, res) {
 
@@ -142,7 +145,7 @@ function updatePackage(req, res) {
     let id = req.params.id
 
     
-    Package.findByIdAndUpdate(id, body, {new: true, useFindAndModify: true }, (err, paquete) => {
+    Package.findByIdAndUpdate(id, body, {new: true, useFindAndModify: false }, (err, paquete) => {
         if (err) {
           return res.status(500).json({
             message: "Something on the server didnt work right put.",

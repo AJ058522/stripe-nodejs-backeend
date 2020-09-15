@@ -21,8 +21,7 @@ var userSchema = new Schema({
     password: {  type: String, required: [false, ' El password es requerido']},
     img: {  type: String, required: [false, ' la img es requerido']},
     id: {  type: String, required: [false, ' la id es requerido']},
-    date_create: {  type: String, required: [false, ' la data_create es requerido']},
-
+    packages:[{ type: Schema.Types.ObjectId, ref:'Package'}], //Relation with of the model
 
     role: { type: String, enum: rolesValidos, required: false, default: 'USER_ROLE'},
     

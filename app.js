@@ -1,4 +1,7 @@
-require('./config/config')
+require('./config/config.js')
+require('dotenv').config() //STRIPE
+
+
 const express = require('express')
 const bodyParser = require('body-parser');
 const morgan = require('morgan')
@@ -12,7 +15,6 @@ app.use(cors())
 
 //
 // Configurar cabeceras y cors
-
 
 
 
@@ -32,6 +34,10 @@ var imagesRoutes = require('./routes/images');
 var uploadRoutes = require('./routes/upload');
 var buzonRoutes = require('./routes/buzon');
 var packageRoutes = require('./routes/package');
+var stripeRoutes = require('./routes/stripe');
+var adminRoutes = require('./routes/admin');
+
+
 
 
 
@@ -44,7 +50,8 @@ app.use('/api', imagesRoutes)
 app.use('/api', uploadRoutes)
 app.use('/api', buzonRoutes)
 app.use('/api', packageRoutes)
-
+app.use('/api', stripeRoutes)
+app.use('/api', adminRoutes)
 
 
 

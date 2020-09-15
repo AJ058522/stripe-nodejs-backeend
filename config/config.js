@@ -19,9 +19,9 @@ if(process.env.NODE_ENV === 'dev'){
 }else{
    
 
-    urlDB = process.env.MONGO_URI;
-    // urlDB = 'mongodb://localhost:27017/registros_PR' //mongodb+srv://developer-dci-pr:Geov2020!@cluster0-nxlwx.mongodb.net/DC_cond_DB
-    // urlDB = 'mongodb+srv://geovanedasilva:nelliebeach4205@cluster0-bipz8.mongodb.net/registros_PR'
+    urlDB = process.env.MONGO_TESTE;
+     //urlDB  //mongodb+srv://developer-dci-pr:Geov2020!@cluster0-nxlwx.mongodb.net/DC_cond_DB
+    // urlDB = 'mongodb+srv://geovanedasilva:nelliebeach4205@cluster0-bipz8.mongodb.net/tests'
 
 }
 
@@ -54,5 +54,5 @@ process.env.AWS_SECRET = process.env.AWS_SECRET || '0bgoJWcFhRTvNB4hLW/Jm1BkVHem
 process.env.EMAIL = process.env.EMAIL  ||'AKIAYHSJ7FZWDLQEN7VY',
 process.env.PASSWORD = process.env.PASSWORD ||'BKIKL3QtaYlBOvgOTWxJImJIJ9MZD0ZpoRkVfsdpLvEJ'
 
-//process.env.URL_SITE = process.env.URL_SITE || 'http://localhost:3000'
-process.env.URL_SITE = 'https://send-to-puerto-rico.herokuapp.com'
+process.env.URL_SITE = process.env.URL_SITE || 'http://localhost:3000'
+//process.env.URL_SITE = 'https://send-to-puerto-rico.herokuapp.com'

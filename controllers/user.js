@@ -6,6 +6,8 @@ const jwt = require('jsonwebtoken');
 
 //model
 var User = require("../database/models/user");
+var Package = require("../database/models/package");
+
 const nodemailer = require("nodemailer");
 
 
@@ -46,8 +48,9 @@ function getUsers(req, res) {
 
   //  Usuario.find({ estado: true },'id name img role email')  nao eliminar usuario, apenas cambiar de estado
 
-  User.find({}, 'id img  email nombre role n_buzon address phone')
-  .populate('titulares', 'contatos email titulares')
+  User.find({}, 'id img  email nombre role n_buzon address phone packages')
+  .populate('packages', 'saller name store track_number p l w h date_create nota price description')
+  //.populate('packages', 'saller name store track_number p l w h date_create nota')
     .skip(desde)
     .limit(limite)
     .exec((err, users) => {
@@ -98,11 +101,6 @@ function getUsers(req, res) {
 
 
 
-
-
-
-
-        console.log( '######', users);
         return res.status(200).json({
           ok: true,
           users: users,
@@ -182,10 +180,7 @@ function registerUser(req, res) {
 
 
    }
-   console.log('TIPO USER EMAIL', body.email);
 
-   console.log('TIPO PASSWORD', body.password);
-   let pr = 'PR-'
 
    let OkMessage =  respTextMessage.message + respTextMessage.direccionMiami + respTextMessage.important+ respTextMessage.nota
 
@@ -205,6 +200,7 @@ function registerUser(req, res) {
     }).catch(function (err) {
         console.error(err, err.stack);
     });
+    
   }
 
 
@@ -250,13 +246,13 @@ function registerUser(req, res) {
     
       
       let url_logo = 'assets/send_to_puerto.png'
-      let replay = 'info@sendtopuertorico.com'
+      let replay = 'geovaneartedesign@gmail.com'
       // send mail with defined transport object
       let info = await transporter.sendMail({
         from: `info@sendtopuertorico.com`, // sender address
         to: `<${body.email}>,<${replay}>`, // list of receivers
         subject: 'Registro completado!!!',
-        replyTo:`<${replay}>`,
+       // replyTo:`<${replay}>`,
 
 
         //text: "Hello world?", // plain text body
@@ -331,6 +327,27 @@ function registerUser(req, res) {
 function updateUser(req, res) {
   let id = req.params.id;
   let body = req.body;
+
+  var paquete = new Package({
+    saller: body.saller,
+    name: body.name,
+    store: body.store,
+    track_number: body.track_number,
+    p: body.p,
+    l: body.l,
+    w: body.w,
+    h: body.h,
+    delivery: body.delivery,
+    nota: body.nota,
+    date_create: new Date(),
+    price:body.price,
+    description: body.description,
+    token: body.token,
+    
+    //user: req.user._id,
+    //ref_id_user: req.user._id
+    
+  });
 
   User.findByIdAndUpdate(id, body, {new: true, useFindAndModify: true }, (err, user) => {
     if (err) {
@@ -478,9 +495,162 @@ function login(req, res) {
 
 
 
+//=====================================
+//         USER = POST PACKAGE ID
+//=====================================
+
+async function postPackage( req, res){
+  
+  let body = req.body;
+  let id  = req.params.id
+  let paqueteNew = new Package({
+    saller: body.saller,
+    phone: body.phone,
+    name: body.name,
+    store: body.store,
+    track_number: body.track_number,
+    p: body.p,
+    l: body.l,
+    w: body.w,
+    h: body.h,
+    delivery: body.delivery,
+    nota: body.nota,
+    date_create: new Date(),
+    price: body.price,
+    description: body.description,
+    token: body.token,
+   // status: body.status El status solamente se cambia en el update
+    
+  });
+
+
+  console.log('Soy un email', body.email);
+    
+
+  let user  = await User.findById(id);
+  console.log(1)
+
+
+  paqueteNew.user = user;
+
+  setTimeout(async function(){
+    
+    
+    await paqueteNew.save( (err, packageDB) =>{
+
+      if (err) {
+        return res.status(500).json({
+          ok: false,
+          message: "Something on the server didnt work right.",
+          err,
+        });
+      }
+  
+      if (!packageDB) {
+        res.status(400).json({
+          ok: false,
+          message:
+            "Server didnt understand the URL you gave it, You need will check ID.",
+        });
+      }
+  
+  
+    });
+
+    console.log(2)
+    
+
+  user.packages.push(paqueteNew);
+  console.log(3)
+
+    setTimeout(async function(){
+      await user.save((err, userDB)=>{
+
+        if (err) {
+          return res.status(500).json({
+            ok: false,
+            message: "Something on the server didnt work right.",
+            err,
+          });
+        }
+    
+        if (!userDB) {
+          res.status(400).json({
+            ok: false,
+            message:
+              "Server didnt understand the URL you gave it, You need will check ID.",
+          });
+        }
+
+
+    
+      });
+
+       
+        }, 4000);
+      }, 3000);
+
+      
+  console.log(4)
+
+  let code = '+1'
+  let respTextMessage = {
+    message: `Hola ${body.name} Recibimos su paquete y te enviamos una factura. para visualizar su factura, entre en su dashboard!`,
+   
+  }
+
+
+  let OkMessage =  respTextMessage.message 
+  let params = {
+   Message: `${OkMessage}`, /* required */
+   PhoneNumber: `${code}${body.phone}`,
+ };
+ 
+ console.log(params.Message);
+ 
+ function sendSMS(params) {
+    
+   var publishTextPromise = new AWS.SNS().publish(params).promise();
+   // Handle promise's fulfilled/rejected states
+   publishTextPromise.then(function (data) {
+       console.log("MessageID is " + data.MessageId);
+   }).catch(function (err) {
+       console.error(err, err.stack);
+   });
+   
+ }
+  
+sendSMS(params)
+
+ return res.status(200).json({
+    ok : true,
+    message:'All wa create ready!',
+    package: paqueteNew,
+        
+    
+
+  })
 
 
 
+}  
+
+// Preciso melhorar isso
+async function getPackage(req, res){
+  
+  let id = req.params.id
+
+const user = await User.findById(id).populate('packages')
+res.send(user)
+
+}
+
+
+async function getUsersAndPackages(err, res){
+  const user = await User.find().populate('packages')
+ return res.send(user)
+ 
+}
 
 
 
@@ -490,6 +660,12 @@ module.exports = {
   registerUser,
   deleteUser,
   updateUser,
-  login
+  login,
+  postPackage,
+  getPackage,
+  getUsersAndPackages,
+  
+  
+
 
 };

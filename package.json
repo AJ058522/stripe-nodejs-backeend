@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +16,7 @@
     "brew": "0.0.8",
     "btoa": "^1.2.1",
     "cors": "^2.8.5",
-    "dotenv": "^8.0.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.6",
     "jsonwebtoken": "^8.5.1",
@@ -27,13 +27,15 @@
     "nodemailer": "^6.4.10",
     "nodemon": "^2.0.3",
     "serve-index": "^1.9.1",
+    "stripe": "^8.84.0",
     "sweetalert2": "^9.8.2",
     "underscore": "^1.9.2",
     "uniqid": "^5.2.0",
-    "uuid": "^7.0.1"
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
     "@types/mysql": "^2.15.9",
-    "eslint-config-node": "^4.0.0"
+    "eslint-config-node": "^4.0.0",
+    "jest": "^26.2.2"
   }
 }
