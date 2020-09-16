@@ -264,14 +264,14 @@ function registerUser(req, res) {
         ],
         html: `
 
-        <h3>Gracias por registrarse con Send To Puerto Rico, su número de buzón es "${pr}${user.n_buzon}"</h3>
+        <h3>Gracias por registrarse con Send To Puerto Rico, su número de buzón es "PR-${user.n_buzon}"</h3>
                <p>Nombre y Apellido: ${body.nombre}</p> 
                <p>Correo electrónico: ${body.email}</p> 
                <p>Teléfono: ${body.phone}</p> 
                <p>Dirección Física: ${body.address}</h2> <p>    
                <h3>Su dirección asignada:</h3>
                <p>Nombre: ${body.nombre}</p> 
-               <p>Número de buzón: ${pr}${user.n_buzon}</p>
+               <p>Número de buzón: 'PR-'${user.n_buzon}</p>
                <p>13461 NW 19 Lane</p>  
                <p>Miami FL 33182</p> <br>
                <p>Es importante que el número de buzón se encuentre seguido del nombre para efectos de identificar el paquete.</p> 
