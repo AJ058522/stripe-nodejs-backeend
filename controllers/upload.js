@@ -1,5 +1,4 @@
 var User = require('../database/models/user');
-var Titular = require('../database/models/titular');
 
 
 
@@ -41,7 +40,6 @@ function UploadImage( req, res, next){
 
   //var archivo = req.files.copia_escritura; //PDF
 
-  console.log('###################', archivo);
 
   var nombreCortado = archivo.name.split('.');
 
@@ -117,32 +115,6 @@ function subitPorTipo( tipo, id, nombreArchivo, res) {
     }
 
 
-    if(tipo === 'titulares'){
-
-        Titular.findById(id, (err, titular)=>{
-            var pathViejo = './uploads/titulares/' + titular.img;
-
-            //metodo para borrar imagen vieja | Obg: ese metodo no funciona en algunas versiones de node
-            if( fs.existsSync(pathViejo)){
-                fs.unlinkSync( pathViejo );
-  
-            }
-
-            titular.img = nombreArchivo;
-
-            titular.save( (err, titularActualizado)=>{
-
-                   return res.status(200).json({
-                    ok: true,
-                    mensaje: 'Imagen actualizada correctamente',
-                    titular: titularActualizado,
-                    
-                })
-
-            })
-
-        })
-    }
 
 
     if(tipo === 'contratos'){

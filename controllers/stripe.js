@@ -3,9 +3,7 @@ const { v1: uuidv4 } = require('uuid');
 const { findById } = require('../database/models/stripe');
 var StripeModel = require('../database/models/stripe');
 const Package = require('../database/models/package');
-const { version } = require('mongoose');
-const stripe = require('stripe')('sk_test_51HEGwcCVUq9WqvnmR0kXaUiqCHmZda7VYw81g3JmzxUHrin0epu4hhqY2qsUOJWfCEyKUQ8OuyYB5H5jMTpIhPhI00NemB2nxe');
-
+const stripe = require('stripe')('YOUR_sk_test_stripe');
 
 
 if(process.env.NODE_ENV !== 'production'){
@@ -22,7 +20,6 @@ console.log( 'PUBLIC KEY',stripe_Public_key);
 
 
 
-let idTransaction = uuidv4() // ID transaction UUID
 
  async function postPeyment ( req, res ){
 
@@ -31,7 +28,7 @@ let idTransaction = uuidv4() // ID transaction UUID
     let body = req.body
     let id = req.params.id
     let pack_id = req.params.package_id
-
+    console.log(id)
 //exportar var porque necesito mandar el id por paarametro
    
     const charge = await stripe.charges.create({
@@ -81,10 +78,6 @@ let idTransaction = uuidv4() // ID transaction UUID
            body.n_factura = stripeModel.package_id;
 
 
-           
-    
-
-
           stripeModel.save((err, paymentSaved)=>{
               if(err){
                  return res.status(500).json({
@@ -107,7 +100,7 @@ let idTransaction = uuidv4() // ID transaction UUID
 
               module.exports  = pack_id // Global parames ID
 
-              updatePackage() // Here call metodo function Update
+              updatePackage(); // Here call metodo function Update
    
               res.status(200).json({
                   ok: true,
@@ -128,7 +121,7 @@ function getPayments(req, res){
     let desde = req.query.desde || 0;
     desde = Number(desde);
   
-    let limite = req.query.limite || 1000000000000000000;
+    let limite = req.query.limite || 100;
     limite = Number(limite);
     
     //  Usuario.find({ estado: true },'id name img role email')  nao eliminar usuario, apenas cambiar de estado
@@ -148,9 +141,7 @@ function getPayments(req, res){
           });
         }
   
-           
-           
-        
+
         //Usuario.count({}, (err, counts)=>{ estado para dar os filtros apenas de usuarios ativos
         StripeModel.count({}, (err, counts) => {
           //jqueri para contar usuarios

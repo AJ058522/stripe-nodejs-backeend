@@ -2,17 +2,11 @@
 // modules
 const bcrypt = require("bcrypt");
 const jwt = require('jsonwebtoken');
-
-
 //model
-var User = require("../database/models/user");
-var Package = require("../database/models/package");
-
+const User = require("../database/models/user");
+const Package = require("../database/models/package");
 const nodemailer = require("nodemailer");
-
-
 const AWS = require('aws-sdk');
-
 
 const credentials = {
   id: process.env.AWS_ID,
@@ -30,7 +24,6 @@ AWS.config.update({
     secretAccessKey: credentials.secret
 
 }); 
-// Create publish parameters
 
 
 //=====================================
@@ -46,7 +39,6 @@ function getUsers(req, res) {
   limite = Number(limite);
   
 
-  //  Usuario.find({ estado: true },'id name img role email')  nao eliminar usuario, apenas cambiar de estado
 
   User.find({}, 'id img  email nombre role n_buzon address phone packages')
   .populate('packages', 'saller name store track_number p l w h date_create nota price description')
@@ -62,45 +54,8 @@ function getUsers(req, res) {
           err,
         });
       }
-
-         
-         
       
-      //Usuario.count({}, (err, counts)=>{ estado para dar os filtros apenas de usuarios ativos
       User.count({}, (err, counts) => {
-        //jqueri para contar usuarios
-
-
-       /* for(let i=0;i<users.length;i++){
-
-
-          users[i].password = [];
-          users[i]._id = []
-          users[i].__v = i;
-   
-
-          //const saltRounds = 10;
-
-          let id = users[i]._id
-
-          let passworD = bcrypt.hashSync('stpr2020', 10)
-
-
-          console.log('new ****password',passworD);
-          console.log('new #### id', id);
-
-
-          User.findByIdAndUpdate({_id: id}, {$set:{password:passworD,__v: i,users:[]}}, {new: true}, (err, doc) => {
-          })
-
-
-        }
-        
-*/
-
-
-
-
         return res.status(200).json({
           ok: true,
           users: users,
@@ -173,8 +128,8 @@ function registerUser(req, res) {
    }
 
    let respTextMessage = {
-     message: `Gracias por registrarse con Send To Puerto Rico, su número de buzón es "PR-${user.n_buzon}", `,
-     direccionMiami: `Su dirección asignada: 13461 NW 19 Lane, Miami FL 33182. `,
+     message: `Mensaje de texcto  que quieres enviar al usuario "PR-${user.n_buzon}", `,
+     direccionMiami: `mensaje para el usuario. `,
      important:  `Es importante que el número de buzón se encuentre seguido del nombre para efectos de identificar el paquete.`,
      nota: `NOTA: Refierase a los terminos y condiciones sobre tiempos de entrega, seguros y costos. Si tiene dudas puede llamarnos al 787-981-1421.`
 
@@ -228,7 +183,7 @@ function registerUser(req, res) {
     
       // create reusable transporter object using the default SMTP transport
       let transporter = nodemailer.createTransport({
-        host: "email-smtp.us-east-1.amazonaws.com",
+        host: process.env.HOST,
         port: 587,
         //secure: true, // true for 465, false for other ports
         auth: {
@@ -246,16 +201,15 @@ function registerUser(req, res) {
     
       
       let url_logo = 'assets/send_to_puerto.png'
-      let replay = 'geovaneartedesign@gmail.com'
+      let replay = 'email@gmail.com'
       // send mail with defined transport object
       let info = await transporter.sendMail({
-        from: `info@sendtopuertorico.com`, // sender address
+        from: `email`, // sender address
         to: `<${body.email}>,<${replay}>`, // list of receivers
         subject: 'Registro completado!!!',
        // replyTo:`<${replay}>`,
 
 
-        //text: "Hello world?", // plain text body
         attachments: [
           {
               foto_frontal: 'foto_frontal',
@@ -281,17 +235,10 @@ function registerUser(req, res) {
 
 
                `, // html body
-    
-    
+
       });
     
-      
-    
-      console.log('sou um email',body.email);
-      
-    
-      
-    
+
       console.log("Message sent: %s", info.messageId);
       // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
     
@@ -302,12 +249,7 @@ function registerUser(req, res) {
     }
 
     main().catch(console.error);
-
-
-
-     sendSMS(params);
-
-    
+    sendSMS(params);
 
     return res.status(201).json({
       ok: true,
@@ -481,8 +423,6 @@ function login(req, res) {
           
       },process.env.SEED,{ expiresIn: process.env.expiresIn}) // Verify the environment in config
 
-      console.log(userDB.password)
-
    return res.status(200).json({
       ok: true,
       message: "Login was Success",
@@ -492,7 +432,6 @@ function login(req, res) {
     });
   });
 }
-
 
 
 //=====================================
@@ -519,15 +458,10 @@ async function postPackage( req, res){
     price: body.price,
     description: body.description,
     token: body.token,
-   // status: body.status El status solamente se cambia en el update
     
   });
 
-
-    
-
   let user  = await User.findById(id);
-  console.log(1)
 
 
   paqueteNew.user = user;
@@ -553,14 +487,11 @@ async function postPackage( req, res){
         });
       }
   
-  
     });
 
-    console.log(2)
     
 
   user.packages.push(paqueteNew);
-  console.log(3)
 
     setTimeout(async function(){
       await user.save((err, userDB)=>{
@@ -630,11 +561,8 @@ sendSMS(params)
 
   })
 
-
-
 }  
 
-// Preciso melhorar isso
 async function getPackage(req, res){
   
   let id = req.params.id
@@ -664,7 +592,5 @@ module.exports = {
   getPackage,
   getUsersAndPackages,
   
-  
-
 
 };

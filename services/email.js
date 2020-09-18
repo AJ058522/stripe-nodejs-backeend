@@ -1,7 +1,6 @@
 'user strict'
 require('../config/config')
 const nodemailer = require("nodemailer");
-var Titular = require("../database/models/titular");
 //const jwt = require('jsonwebtoken');
 
 

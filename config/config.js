@@ -20,15 +20,11 @@ if(process.env.NODE_ENV === 'dev'){
    
 
     urlDB = process.env.MONGO_URI;
-     //urlDB  //mongodb+srv://developer-dci-pr:Geov2020!@cluster0-nxlwx.mongodb.net/DC_cond_DB
-     urlDB = 'mongodb+srv://geovanedasilva:nelliebeach4205@cluster0-bipz8.mongodb.net/tests'
+     urlDB = 'mongodb://localhost:27017/7876574891'
 
 }
 
-//heroku 
 
-//sendtopuertorico@gmail.com
-//$sendtopuertoricosolution2019
 
 process.env.URLDB = urlDB;
 
@@ -39,20 +35,20 @@ process.env.URLDB = urlDB;
 
 // Token vencimento 100 horas
 
-process.env.expiresIn = '1000h';
+process.env.expiresIn = '10h';
 
 //SEED
 
-process.env.SEED = process.env.SEED || 'key-desarollo-secrets-yes'
+process.env.SEED = process.env.SEED || 'your_seed_sing'
 
-process.env.AWS_ID = process.env.AWS_ID || 'AKIAYHSJ7FZWIV5GG5UJ'
-process.env.AWS_SECRET = process.env.AWS_SECRET || '0bgoJWcFhRTvNB4hLW/Jm1BkVHem2G74Saqh59hn'
+process.env.AWS_ID = process.env.AWS_ID || 'ID_AWS'
+process.env.AWS_SECRET = process.env.AWS_SECRET || 'SECRETE_AWS'
 
 
-//Auth config nodemailer
+//Auth config AWS
 
-process.env.EMAIL = process.env.EMAIL  ||'AKIAYHSJ7FZWDLQEN7VY',
-process.env.PASSWORD = process.env.PASSWORD ||'BKIKL3QtaYlBOvgOTWxJImJIJ9MZD0ZpoRkVfsdpLvEJ'
+process.env.EMAIL = process.env.EMAIL  ||'EMAIL_AWS',
+process.env.PASSWORD = process.env.PASSWORD ||'PASSWORD_AWS'
+process.env.HOST = process.env.HOST || "YOUR_HOST_AWS"
 
 process.env.URL_SITE = process.env.URL_SITE || 'http://localhost:3000'
-//process.env.URL_SITE = 'https://send-to-puerto-rico.herokuapp.com'

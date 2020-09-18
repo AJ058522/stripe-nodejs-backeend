@@ -8,7 +8,7 @@ function getPackages(req, res) {
     let desde = req.query.desde || 0;
     desde = Number(desde);
   
-    let limite = req.query.limite || 1000000000000000000;
+    let limite = req.query.limite || 100;
     limite = Number(limite);
     
   
